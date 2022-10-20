@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-family: var(--fontSecondary);
 }
 
@@ -308,7 +308,7 @@ a {
 }
 
 .cv {
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -316,6 +316,16 @@ a {
 
 .cv h3 {
   display: flex;
+}
+.btn-warning
+{
+  margin: 0 0 1rem 0;
+}
+.edit_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 0 1rem 0;
 }
 
 .cv__experience-title {
@@ -340,20 +350,17 @@ a {
   display: flex;
   flex-direction: row;
  justify-content: space-between;
+ 
 }
 
 @media (min-width: 758px) {
   .cv__title {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr;
+    display: flex
   }
 
   .cv {
     padding: 0 0 2rem 2rem;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 5fr;
+    display: flex;
     justify-items: start;
     align-items: start;
     margin: 3rem;
@@ -363,27 +370,25 @@ a {
     justify-items: center;
   }
 
+  .edit_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+
   .cv h2,
   .cv h3 {
     text-align: start;
+    display: flex;
+    flex-direction: row;
   }
 
-  .cv__image {
-    grid-column: 1;
-    grid-row: 1;
-    align-self: center;
-    justify-self: center;
-  }
+ 
 
-  .cv__personal-info {
-    grid-column: 1;
-    grid-row: 1;
-    align-items: flex-start;
-  }
+  
 
   .cv__experience {
-    grid-column: 2;
-    grid-row: 1;
+  
     border-color: #086274;
   }
 
@@ -392,22 +397,12 @@ a {
     grid-row: 2;
   }
 
-  .cv__skills {
-    grid-column: 2;
-    grid-row: 3;
-  }
-
-  .cv__courses {
-    grid-column: 2;
-    grid-row: 4;
-  }
-
-  .cv__extra {
-    grid-column: 2;
-    grid-row: 5;
-  }
+  /*Skills*/
+  .circulo {
+    
+    color:white;
 }
-
+}
 /*Proyects*/
 
 .projects {

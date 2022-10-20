@@ -9,16 +9,16 @@
   </div>
 
   <div class="navbar__sections">
-    <a href="cv.html"
+    <a href="https://github.com/alejorod1992"
       ><img src="assets/github.png" alt="Github" class="navbar__logo_social"
     /></a>
-    <a href="portfolio.html"
+    <a href="https://www.linkedin.com/in/rodriguezalej/"
       ><img
         src="assets/linkedin.png"
         alt="LinkedIn"
         class="navbar__logo_social"
     /></a>
-    <a href="contacto.html"
+    <a href="https://www.instagram.com/alercrea"
       ><img
         src="assets/instagram.png"
         alt="Instagram"
@@ -26,7 +26,8 @@
     /></a>
   </div>
     <div class="navbar__button">
-      <a href="#" class="myButton">Login</a>
+      <button type="button" class="btn btn-primary btn-outline-light" (click)="login()" *ngIf="!isLogged">Login</button>
+      <button type="button" class="btn btn-primary btn-outline-light" (click)="onLogOut()"  *ngIf="isLogged">Log out</button>
     </div>
 </div>
 <header>
